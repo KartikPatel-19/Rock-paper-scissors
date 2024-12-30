@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rock-paper-scissors.css" />
+  </head>
+  <body>
+    <p
+      style="
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 35px;
+      "
+    >
+      Rock Paper Scissors Game
+    </p>
+    <button
+      class="rock"
+      onclick="result=''; 
+        playerMove='Rock';
+        computerMove=computerPlay();
+        result=game(playerMove, computerMove);
+    "
+    >
+      <img src="Rock.png" alt="Rock" width="100px" />
+    </button>
+    <button
+      class="paper"
+      onclick="result=''; 
+        playerMove='Paper';
+        computerMove=computerPlay();
+        result=game(playerMove, computerMove);"
+    >
+      <img src="Paper.png" alt="Paper" width="100px" />
+    </button>
+    <button
+      class="scissors"
+      onclick="result=''; 
+        playerMove='Scissors';
+        computerMove=computerPlay();
+        result=game(playerMove, computerMove);"
+    >
+      <img src="Scissors.png" alt="Scissors" width="100px" />
+    </button>
+    <p
+      class="displayResult"
+      style="margin-top: 30px; margin-bottom: 30px; font-size: 25px"
+    ></p>
+    <p
+      class="mainGame"
+      style="margin-top: 30px; margin-bottom: 30px; font-size: 18px"
+    ></p>
+    <p
+      class="displayScore"
+      style="margin-top: 30px; margin-bottom: 30px; font-size: 20px"
+    ></p>
+    <button
+      class="reset"
+      onclick="score.win=0;score.lose=0;score.tie=0; 
+      localStorage.removeItem('score'); 
+      alert(`Score has been reset.`);
+      updateScoreElement();
+      document.querySelector('.mainGame').textContent='';
+      document.querySelector('.displayScore').textContent='';
+      document.querySelector('.displayResult').textContent='';"
+    >
+      Reset Score
+    </button>
+    <script src="rock-paper-scissors.js"></script>
+  </body>
+</html>

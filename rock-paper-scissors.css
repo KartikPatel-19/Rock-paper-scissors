@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(32, 31, 31);
+  color: white;
+}
+.rock,
+.scissors,
+.paper {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  margin-right: 20px;
+  background-color: rgb(32, 31, 31);
+  cursor: pointer;
+}
+.reset {
+  margin: 0px;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+
+  cursor: pointer;
+}
+img {
+  background-color: rgb(32, 31, 31);
+  margin: 0px;
+  padding: 0px;
+  border: 5px solid white;
+  border-radius: 50px;
+  color: rgb(32, 31, 31);
+}
