@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="rock-paper-scissors.css" />
   </head>
   <body>
-    <p
+    <div>
+      <p
       style="
-        font-size: 20px;
         font-family: 'Times New Roman', Times, serif;
         font-size: 35px;
       "
     >
       Rock Paper Scissors Game
     </p>
-    <button
+    <div class="gamebutton">
+      <button
       class="rock"
       onclick="result=''; 
         playerMove='Rock';
@@ -44,6 +45,7 @@
     >
       <img src="Scissors.png" alt="Scissors" width="100px" />
     </button>
+    </div>
     <p
       class="displayResult"
       style="margin-top: 30px; margin-bottom: 30px; font-size: 25px"
@@ -68,6 +70,8 @@
     >
       Reset Score
     </button>
+
+    </div>
     <script src="rock-paper-scissors.js"></script>
   </body>
 </html>

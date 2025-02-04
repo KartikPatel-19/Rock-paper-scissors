@@ -1,11 +1,20 @@
+
 body {
   background-color: rgb(32, 31, 31);
   color: white;
 }
+div{
+  vertical-align:middle;
+  height: 100%;
+  text-align: center;
+}
+.gamebutton{
+  margin: auto;
+}
 .rock,
 .scissors,
 .paper {
-  margin: 0px;
+  margin: auto;
   padding: 0px;
   border: none;
   margin-right: 20px;
@@ -13,11 +22,14 @@ body {
   cursor: pointer;
 }
 .reset {
-  margin: 0px;
-  padding: 5px 10px;
-  font-size: 16px;
+  margin: auto;
+  padding: 10px 15px;
+  font-size: 18px;
   font-family: "Times New Roman", Times, serif;
-
+  border: none;
+  border-radius: 25px;
+  background-color:rgb(156, 204, 251);
+  color: aliceblue;
   cursor: pointer;
 }
 img {
